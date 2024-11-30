@@ -1,0 +1,57 @@
+{
+    "login": {
+      "email": "ben+pose@workwithloop.com",
+      "password": "Password123"
+    },
+    "tasks": {
+      "test_case_1": {
+        "name": "Draft project brief",
+        "taskId": "1207728107119660",
+        "tags": ["Non-Priority", "On track"],
+        "navigationLink": "span.SidebarNavigationLinkCard-label:has-text(\"Cross-functional project plan, Project\")",
+        "taskColumn": "div.CommentOnlyBoardColumn:has(h3:has-text(\"To do\"))"
+      },
+      "test_case_2": {
+        "name": "Schedule kickoff meeting",
+        "taskId": "1207770129170812",
+        "tags": ["Medium", "At risk"],
+        "navigationLink": "span.SidebarNavigationLinkCard-label:has-text(\"Cross-functional project plan, Project\")",
+        "taskColumn": "div.CommentOnlyBoardColumn:has(h3:has-text(\"To do\"))"
+      },
+      "test_case_3": {
+        "name": "Share timeline with teammates",
+        "taskId": "1207770129170814",
+        "tags": ["High", "Off track"],
+        "navigationLink": "span.SidebarNavigationLinkCard-label:has-text(\"Cross-functional project plan, Project\")",
+        "taskColumn": "div.CommentOnlyBoardColumn:has(h3:has-text(\"To do\"))"
+      },
+      "test_case_4": {
+        "name": "[Example] Laptop setup for new hire",
+        "taskId": "1205367008167113",
+        "tags": ["Medium priority", "Low effort", "New hardware", "Not Started"],
+        "navigationLink": "span.SidebarNavigationLinkCard-label:has-text(\"Work Requests\")",
+        "taskColumn": "div.CommentOnlyBoardColumn:has(h3:has-text(\"New Requests\"))"
+      },
+      "test_case_5": {
+        "name": "[Example] Password not working",
+        "taskId": "1205367008167114",
+        "tags": ["Low effort", "Low priority", "Password reset", "Waiting"],
+        "navigationLink": "span.SidebarNavigationLinkCard-label:has-text(\"Work Requests\")",
+        "taskColumn": "div.CommentOnlyBoardColumn:has(h3:has-text(\"In Progress\"))"
+      },
+      "test_case_6": {
+        "name": "[Example] New keycard for Daniela V",
+        "taskId": "1205367008167115",
+        "tags": ["Low effort", "New hardware", "High Priority", "Done"],
+        "navigationLink": "span.SidebarNavigationLinkCard-label:has-text(\"Work Requests\")",
+        "taskColumn": "div.CommentOnlyBoardColumn:has(h3:has-text(\"Completed\"))"
+      }
+    },
+    "selectors": {
+      "taskName": "span.TypographyPresentation--medium:has-text(\"{{name}}\")",
+      "taskContainer": "[data-task-id=\"{{taskId}}\"]",
+      "tagsContainer": ".BoardCardCustomPropertiesAndTags",
+      "tagLocator": "span:has-text(\"{{tag}}\")"
+    }
+  }
+  
